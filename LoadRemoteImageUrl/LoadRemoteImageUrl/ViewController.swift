@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         image.load(url: url!)
         
     }
-
-
 }
 
 extension UIImageView {
@@ -37,4 +35,3 @@ extension UIImageView {
         }
     }
 }
-
