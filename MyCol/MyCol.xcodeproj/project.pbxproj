@@ -14,6 +14,7 @@
 		042D004224471FCD00144902 /* MyCol.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042D004024471FCD00144902 /* MyCol.xcdatamodeld */; };
 		042D004424471FD300144902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042D004324471FD300144902 /* Assets.xcassets */; };
 		042D004724471FD300144902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042D004524471FD300144902 /* LaunchScreen.storyboard */; };
+		04EA64D6244728DD00281EB0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64D5244728DD00281EB0 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		042D004324471FD300144902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042D004624471FD300144902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042D004824471FD300144902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EA64D5244728DD00281EB0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				042D004524471FD300144902 /* LaunchScreen.storyboard */,
 				042D004824471FD300144902 /* Info.plist */,
 				042D004024471FCD00144902 /* MyCol.xcdatamodeld */,
+				04EA64D5244728DD00281EB0 /* CollectionViewCell.swift */,
 			);
 			path = MyCol;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EA64D6244728DD00281EB0 /* CollectionViewCell.swift in Sources */,
 				042D003C24471FCD00144902 /* ViewController.swift in Sources */,
 				042D003824471FCD00144902 /* AppDelegate.swift in Sources */,
 				042D004224471FCD00144902 /* MyCol.xcdatamodeld in Sources */,
