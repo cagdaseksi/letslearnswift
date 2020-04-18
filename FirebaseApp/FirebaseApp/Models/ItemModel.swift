@@ -14,24 +14,34 @@ class ItemModel: NSObject {
     private var _ref: DatabaseReference!
     
     private var _key: String!
+    private var _title: String!
+    private var _desc: String!
+    private var _email: String!
+    private var _like: Int! = 0
     private var _type: String!
-    private var _name: String!
-    private var _quantity: Int!
     
     var key: String {
         return _key
     }
     
-    var name: String {
-        return _name
+    var title: String {
+        return _title
     }
     
-    var quantity: Int {
-        return _quantity
+    var desc: String {
+           return _desc
+    }
+    
+    var email: String {
+           return _email
     }
     
     var type: String {
-        return _type
+           return _type
+    }
+    
+    var like: Int {
+        return _like
     }
     
     // Initialize the new Joke
@@ -41,22 +51,29 @@ class ItemModel: NSObject {
         
         // Within the Joke, or Key, the following properties are children
         
-        if let quantity = dictionary["quantity"] as? Int {
-            self._quantity = quantity
+        if let like = dictionary["like"] as? Int {
+            self._like = like
+        }
+        
+        if let email = dictionary["email"] as? String {
+            self._email = email
+        }
+        
+        if let desc = dictionary["desc"] as? String {
+            self._desc = desc
         }
         
         if let type = dictionary["type"] as? String {
             self._type = type
         }
         
-        if let name = dictionary["name"] as? String {
-            self._name = name
+        if let title = dictionary["title"] as? String {
+            self._title = title
         } else {
-            self._name = ""
+            self._title = ""
         }
         
         // The above properties are assigned to their key.
-        
         self._ref =   DataService.dataService.ITEM_REF.child(self._key) //DataService.dataService.JOKE_REF.childByAppendingPath(self._jokeKey)
     }
 }

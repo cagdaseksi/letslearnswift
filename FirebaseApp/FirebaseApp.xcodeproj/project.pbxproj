@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04767DE324499563009C409E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04767DE224499563009C409E /* TableViewCell.swift */; };
 		04EA64E42448D14C00281EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64E32448D14C00281EB0 /* AppDelegate.swift */; };
 		04EA64E62448D14C00281EB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64E52448D14C00281EB0 /* SceneDelegate.swift */; };
 		04EA64E82448D14C00281EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64E72448D14C00281EB0 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04767DE224499563009C409E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		04EA64E02448D14C00281EB0 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EA64E32448D14C00281EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EA64E52448D14C00281EB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				04EA64FE2448D62100281EB0 /* SignInVC.swift */,
 				04EA65002448D64300281EB0 /* SignUpVC.swift */,
 				04EA65022448D65700281EB0 /* UploadVC.swift */,
+				04767DE224499563009C409E /* TableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				04EA64EE2448D14C00281EB0 /* FirebaseApp.xcdatamodeld in Sources */,
 				04EA64E62448D14C00281EB0 /* SceneDelegate.swift in Sources */,
 				04EA650D2448E29100281EB0 /* Common.swift in Sources */,
+				04767DE324499563009C409E /* TableViewCell.swift in Sources */,
 				04EA65012448D64300281EB0 /* SignUpVC.swift in Sources */,
 				04EA64FF2448D62100281EB0 /* SignInVC.swift in Sources */,
 				04EA65032448D65700281EB0 /* UploadVC.swift in Sources */,
