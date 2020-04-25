@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		04767DE324499563009C409E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04767DE224499563009C409E /* TableViewCell.swift */; };
+		04CFE36A244BB3B4006AE92E /* BookHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFE369244BB3B4006AE92E /* BookHomeVC.swift */; };
+		04CFE36C244BB750006AE92E /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFE36B244BB750006AE92E /* BookDetailViewController.swift */; };
+		04CFE36E244BC12E006AE92E /* BookChapterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFE36D244BC12E006AE92E /* BookChapterVC.swift */; };
+		04CFE370244BC3A9006AE92E /* BookParagrafVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFE36F244BC3A9006AE92E /* BookParagrafVC.swift */; };
+		04CFE372244BC8B2006AE92E /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFE371244BC8B2006AE92E /* BookTableViewCell.swift */; };
 		04EA64E42448D14C00281EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64E32448D14C00281EB0 /* AppDelegate.swift */; };
 		04EA64E62448D14C00281EB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64E52448D14C00281EB0 /* SceneDelegate.swift */; };
 		04EA64E82448D14C00281EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA64E72448D14C00281EB0 /* ViewController.swift */; };
@@ -27,6 +32,11 @@
 
 /* Begin PBXFileReference section */
 		04767DE224499563009C409E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		04CFE369244BB3B4006AE92E /* BookHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHomeVC.swift; sourceTree = "<group>"; };
+		04CFE36B244BB750006AE92E /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		04CFE36D244BC12E006AE92E /* BookChapterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookChapterVC.swift; sourceTree = "<group>"; };
+		04CFE36F244BC3A9006AE92E /* BookParagrafVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookParagrafVC.swift; sourceTree = "<group>"; };
+		04CFE371244BC8B2006AE92E /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		04EA64E02448D14C00281EB0 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EA64E32448D14C00281EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EA64E52448D14C00281EB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +113,11 @@
 				04EA65002448D64300281EB0 /* SignUpVC.swift */,
 				04EA65022448D65700281EB0 /* UploadVC.swift */,
 				04767DE224499563009C409E /* TableViewCell.swift */,
+				04CFE369244BB3B4006AE92E /* BookHomeVC.swift */,
+				04CFE36B244BB750006AE92E /* BookDetailViewController.swift */,
+				04CFE36D244BC12E006AE92E /* BookChapterVC.swift */,
+				04CFE36F244BC3A9006AE92E /* BookParagrafVC.swift */,
+				04CFE371244BC8B2006AE92E /* BookTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,13 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CFE372244BC8B2006AE92E /* BookTableViewCell.swift in Sources */,
 				04EA650F2448E41200281EB0 /* ItemModel.swift in Sources */,
 				04EA64E82448D14C00281EB0 /* ViewController.swift in Sources */,
 				04EA64E42448D14C00281EB0 /* AppDelegate.swift in Sources */,
+				04CFE36C244BB750006AE92E /* BookDetailViewController.swift in Sources */,
 				04EA64EE2448D14C00281EB0 /* FirebaseApp.xcdatamodeld in Sources */,
+				04CFE36A244BB3B4006AE92E /* BookHomeVC.swift in Sources */,
 				04EA64E62448D14C00281EB0 /* SceneDelegate.swift in Sources */,
 				04EA650D2448E29100281EB0 /* Common.swift in Sources */,
 				04767DE324499563009C409E /* TableViewCell.swift in Sources */,
+				04CFE36E244BC12E006AE92E /* BookChapterVC.swift in Sources */,
+				04CFE370244BC3A9006AE92E /* BookParagrafVC.swift in Sources */,
 				04EA65012448D64300281EB0 /* SignUpVC.swift in Sources */,
 				04EA64FF2448D62100281EB0 /* SignInVC.swift in Sources */,
 				04EA65032448D65700281EB0 /* UploadVC.swift in Sources */,

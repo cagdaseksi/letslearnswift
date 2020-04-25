@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>891031691108-vhqnj8do43ocrho814mqlcrrq5rtk1rf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.891031691108-vhqnj8do43ocrho814mqlcrrq5rtk1rf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCoV_9_-v5iZ3vrxOeWavzvEyEGB8eTGkY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>891031691108</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ceksi.FirebaseApp</string>
+	<key>PROJECT_ID</key>
+	<string>socialapp-a6c1b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>socialapp-a6c1b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:891031691108:ios:0ab462b22bd1c92afe6471</string>
+	<key>DATABASE_URL</key>
+	<string>https://socialapp-a6c1b.firebaseio.com</string>
+</dict>
+</plist>

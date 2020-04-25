@@ -24,4 +24,11 @@ class DataService {
     var ITEM_REF: DatabaseReference {
         return _ITEM_REF
     }
+    
+    private var _CATEGORY_REF = Database.database().reference(fromURL: "\(BASE_URL)/categories")
+    
+    var CATEGORY_REF: DatabaseReference {
+        return _CATEGORY_REF
+    }
+    
 }

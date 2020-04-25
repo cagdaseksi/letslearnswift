@@ -1,0 +1,6 @@
+framework module Pods_CeviriyleOgren {
+  umbrella header "Pods-CeviriyleOgren-umbrella.h"
+
+  export *
+  module * { export * }
+}
