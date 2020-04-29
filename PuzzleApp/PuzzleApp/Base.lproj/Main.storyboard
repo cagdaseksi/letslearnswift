@@ -84,28 +84,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GaJ-5t-5st">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="47" y="88" width="320" height="774"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="B43-fN-Vgs"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="1" minimumInteritemSpacing="1" id="wMw-nc-c0b">
-                                    <size key="itemSize" width="181" height="181"/>
+                                    <size key="itemSize" width="150" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="7" minY="50" maxX="6" maxY="50"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="eC2-kr-7Zy" customClass="CollectionViewCell" customModule="PuzzleApp" customModuleProvider="target">
-                                        <rect key="frame" x="7" y="50" width="181" height="181"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tU-lo-yHE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="charuzardRightHand" translatesAutoresizingMaskIntoConstraints="NO" id="8tU-lo-yHE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="8tU-lo-yHE" firstAttribute="centerX" secondItem="eC2-kr-7Zy" secondAttribute="centerX" id="6C1-Xh-RBg"/>
+                                            <constraint firstItem="8tU-lo-yHE" firstAttribute="centerY" secondItem="eC2-kr-7Zy" secondAttribute="centerY" id="7Zt-B8-xty"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="puzzleImage" destination="8tU-lo-yHE" id="XKa-A6-tAl"/>
                                         </connections>
@@ -119,10 +126,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GaJ-5t-5st" firstAttribute="trailing" secondItem="vMD-Yg-ywS" secondAttribute="trailing" id="ObX-sC-sgc"/>
-                            <constraint firstItem="GaJ-5t-5st" firstAttribute="top" secondItem="vMD-Yg-ywS" secondAttribute="top" id="Uih-U5-dFf"/>
-                            <constraint firstItem="GaJ-5t-5st" firstAttribute="leading" secondItem="vMD-Yg-ywS" secondAttribute="leading" id="hvx-iG-3lL"/>
-                            <constraint firstItem="GaJ-5t-5st" firstAttribute="bottom" secondItem="vMD-Yg-ywS" secondAttribute="bottom" id="mIY-kL-bif"/>
+                            <constraint firstItem="GaJ-5t-5st" firstAttribute="top" secondItem="vMD-Yg-ywS" secondAttribute="top" id="39k-rX-LFZ"/>
+                            <constraint firstItem="GaJ-5t-5st" firstAttribute="bottom" secondItem="vMD-Yg-ywS" secondAttribute="bottom" id="46S-a8-wKq"/>
+                            <constraint firstItem="GaJ-5t-5st" firstAttribute="centerX" secondItem="ZR0-p0-lsn" secondAttribute="centerX" id="zAg-8V-pgZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vMD-Yg-ywS"/>
                     </view>
@@ -156,6 +162,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="charuzardRightHand" width="195" height="205"/>
         <image name="puzzle-button.png" width="128" height="128"/>
         <image name="puzzle-play.png" width="128" height="128"/>
         <image name="puzzle.jpg" width="1100" height="1318"/>

@@ -19,11 +19,11 @@ struct Movie: Codable{
     var imageSmall: String{
         return imageName + "-small.jpg"
     }
+    
     var imageWide: String{
         return imageName + "-wide.jpg"
     }
     
-    // Drama | Açao | Terror
     var categoriesDescription: String{
         return categories.joined(separator: " | ")
     }

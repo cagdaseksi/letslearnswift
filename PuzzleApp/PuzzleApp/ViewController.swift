@@ -87,6 +87,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 extension ViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsets(top: 40, left: 0, bottom: 0, right: 0)
+        
         if puzzle[index].title == "Soldier" {
             return UIEdgeInsets(top: 40, left: 16, bottom: 40, right: 16)
         } else if puzzle[index].title == "Charuzard" {
@@ -101,10 +104,12 @@ extension ViewController : UICollectionViewDelegateFlowLayout {
         var customCollectionWidth: CGFloat!
         if puzzle[index].title == "Soldier" {
             customCollectionWidth = collectionViewWidth/4 - 8
+            customCollectionWidth = 300 / 4
         } else if puzzle[index].title == "Charuzard" {
-            customCollectionWidth = collectionViewWidth/3 - 10
+            //customCollectionWidth = collectionViewWidth/3 - 10
+            customCollectionWidth = 320 / 3
         } else {
-            customCollectionWidth = collectionViewWidth/2 - 10
+            customCollectionWidth = 320 / 2
         }
         return CGSize(width: customCollectionWidth, height: customCollectionWidth)
     }
