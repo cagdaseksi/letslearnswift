@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     let questions = ["Simyacı kitabının yazarı kim?", "Gezegenler isimlerini nereden alıyor?", "Güneş sistemimizde kaç gezegen var?"]
     let answers = [["Paulo Coelho", "Osho", "Lev Tolstoy"], ["Onları keşfeden bilim adamlarından.", "Yunan Tanrılarından.", "Latince kelimelerden."], ["8", "9", "10"]]
 
+    
+    
     //Variables
     var currentQuestion = 0
     var rightAnswerPlacement:UInt32 = 0

@@ -1,11 +1,12 @@
 //
-//  DataBaseHelper.swift
-//  MySpecialGallery
+//  DatabaseHelper.swift
+//  TodoApp
 //
-//  Created by MAC on 14.04.2020.
+//  Created by MAC on 30.04.2020.
 //  Copyright © 2020 cagdaseksi. All rights reserved.
 //
 
+import Foundation
 import CoreData
 import UIKit
 
@@ -13,16 +14,15 @@ class DataBaseHelper {
     
     static let shareInstance = DataBaseHelper()
     
-    func save(title:String, shortdescription: String, image: Data){
+    func save(name:String, isDone: Bool){
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let imageInstance = ImageEntity(context: managedContext)
-        imageInstance.image = image
-        imageInstance.title = title
-        imageInstance.shortdescription = shortdescription
+        let instance = TaskEntity(context: managedContext)
+        instance.name = name
+        instance.isdone = isDone
         
         do {
             print("saved.")
@@ -33,14 +33,14 @@ class DataBaseHelper {
         }
     }
     
-    func deleteData(title: String){
+    func deleteData(name: String){
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ImageEntity")
-        fetchRequest.predicate = NSPredicate(format: "title = %@", title)
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "TaskEntity")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", name)
        
         do
         {
@@ -65,24 +65,44 @@ class DataBaseHelper {
         }
     }
     
-    func fetchImage() -> [ImageEntity] {
+    func fetch() -> [TaskEntity] {
         
-         var fetchingImage = [ImageEntity]()
+         var fetchingImage = [TaskEntity]()
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return fetchingImage }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ImageEntity")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "TaskEntity")
         
         do {
             print("All data.")
-            fetchingImage = try managedContext.fetch(fetchRequest) as! [ImageEntity]
+            fetchingImage = try managedContext.fetch(fetchRequest) as! [TaskEntity]
         } catch {
             print(error)
         }
         
         return fetchingImage
     }
+    
+    func update(name:String, isdone: Bool){
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "TaskEntity")
+        let predicate = NSPredicate(format: "name = %@", name)
+        fetchRequest.predicate = predicate
+       
+        do{
+            let foundTasks = try managedContext.fetch(fetchRequest) as! [TaskEntity]
+            foundTasks.first?.isdone = isdone
+            try managedContext.save()
+            print("updated.")
+        }catch{
+                print("update error.")
+            }
+        }
     
 }
