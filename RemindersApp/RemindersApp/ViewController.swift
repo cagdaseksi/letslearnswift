@@ -100,10 +100,6 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController {
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 45
-    }
-    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let deleteAction = UIContextualAction(style: .destructive, title: nil) {(action, sourceView, completionHandler) in
@@ -126,7 +122,17 @@ extension ViewController {
             
             let row = self.models[indexPath.row]
             
-            self.scheduleTest(title: row.title, body: row.body)
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { success, error in
+                if success {
+                    
+                    self.scheduleTest(title: row.title, body: row.body)
+                }
+                else if error != nil {
+                    print("error occurred")
+                }
+            })
+            
+            
             
             completionHandler(true)
         }
