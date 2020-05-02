@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnAdd() {
-        print("acşkadkj")
+        
         guard let vc = storyboard?.instantiateViewController(identifier: "AddViewController") as? AddViewController else {
             print("guard")
             return
