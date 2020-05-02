@@ -60,10 +60,6 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         
     }
     
-    @IBAction func btnSearch(_ sender: Any) {
-        
-    }
-    
     @IBAction func btnBack(_ sender: Any) {
         if webkit.canGoBack{ //  geriye gidebiliyorsa
             webkit.goBack() // web kısmında geriye git.

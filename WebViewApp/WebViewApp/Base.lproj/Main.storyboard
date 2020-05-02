@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WebKit App-->
+        <!--Webview App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebViewApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,27 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="google.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSD-wy-PSI">
-                                <rect key="frame" x="0.0" y="88" width="374" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="google.com.tr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSD-wy-PSI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BlJ-fK-7xO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-Nc-GcW">
-                                <rect key="frame" x="374" y="88" width="40" height="40"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="2uW-XE-I1z"/>
-                                    <constraint firstAttribute="height" constant="40" id="HLq-9a-Iux"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="magnifyingglass" catalog="system"/>
-                                <connections>
-                                    <action selector="btnSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXO-Xr-Ocf"/>
-                                </connections>
-                            </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-Lm-zea">
                                 <rect key="frame" x="0.0" y="128" width="414" height="734"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,16 +37,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IgT-Lm-zea" secondAttribute="bottom" id="6kj-Mq-8Kh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IgT-Lm-zea" secondAttribute="trailing" id="8pa-nk-dmG"/>
                             <constraint firstItem="sSD-wy-PSI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L2j-JC-4sA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tm4-Nc-GcW" secondAttribute="trailing" id="MPJ-mP-RKm"/>
                             <constraint firstItem="sSD-wy-PSI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R1l-Dq-z9y"/>
-                            <constraint firstItem="tm4-Nc-GcW" firstAttribute="leading" secondItem="sSD-wy-PSI" secondAttribute="trailing" id="T8g-Qs-CWN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sSD-wy-PSI" secondAttribute="trailing" id="SYo-5C-nlp"/>
                             <constraint firstItem="IgT-Lm-zea" firstAttribute="top" secondItem="sSD-wy-PSI" secondAttribute="bottom" id="ggV-uc-ydY"/>
-                            <constraint firstItem="tm4-Nc-GcW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o1P-Wa-dps"/>
                             <constraint firstItem="IgT-Lm-zea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ob7-lk-cC7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WebKit App" id="Ay8-i0-OLa">
+                    <navigationItem key="navigationItem" title="Webview App" id="Ay8-i0-OLa">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.left" catalog="system" id="EkU-2X-ady">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -110,6 +95,5 @@
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="arrow.right" catalog="system" width="64" height="48"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>
