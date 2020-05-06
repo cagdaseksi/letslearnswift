@@ -27,9 +27,10 @@ class DetailTableViewCell: UITableViewCell {
 
     func prepare(video: Video) {
           
-           //title.text = video.title
-           //detailDescription.text = video.detailDescription
-           //img.load(url: video.image_url)
+        title.text = video.title
+        detailDescription.text = video.detailDescription
+        channel.text = video.channel
+        img.load(url: video.image_url)
            
        }
     

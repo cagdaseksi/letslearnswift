@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -14,11 +15,23 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     var video: Video!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var webView: WKWebView!
     
+    @IBOutlet weak var tags: UILabel!
+    @IBOutlet weak var detailTitle: UILabel!
+    @IBOutlet weak var detailDescription: UILabel!
+    @IBOutlet weak var channelName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loadData()
+        
+        tags.text = video.tag
+        detailTitle.text = video.title
+        detailDescription.text = video.detailDescription
+        channelName.text = video.channel
+        let urlRequest : URLRequest = URLRequest(url: video.video_url)
+        webView.load(urlRequest)
     }
 
     func loadData(){
@@ -31,7 +44,6 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             DispatchQueue.main.async {
                 do {
                     self.videos = try JSONDecoder().decode([Video].self, from: data)
-                    self.tableView.rowHeight = 100
                     self.tableView.reloadData()
                 } catch {
                   print(error.localizedDescription)

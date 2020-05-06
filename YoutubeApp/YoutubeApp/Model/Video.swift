@@ -20,6 +20,10 @@ struct Video: Codable {
         return URL(string: "https://img.youtube.com/vi/\(video_key)/0.jpg")!
     }
     
+    var video_url: URL {
+        return URL(string: "https://www.youtube.com/embed/\(video_key)")!
+    }
+    
     var tag: String {
         return tags.shuffled().joined(separator: " ")
     }
@@ -31,6 +35,5 @@ struct Video: Codable {
     var detailDescription: String {
         return "\(view) - \(date)"
     }
-    
     
 }
