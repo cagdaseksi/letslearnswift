@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrU-aQ-gEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3063.768115942029" y="117.85714285714285"/>
+            <point key="canvasLocation" x="3026" y="118"/>
         </scene>
         <!--Add Video-->
         <scene sceneID="kSi-yd-ouN">
@@ -359,7 +359,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJy-2m-Kbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598.5507246376812" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1630" y="118"/>
         </scene>
     </scenes>
     <resources>
