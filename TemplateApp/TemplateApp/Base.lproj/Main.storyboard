@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rXC-dH-4JX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--İngilizce Türkçe Fıkralar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TemplateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lyc-ww-BHv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.13907000420000001" green="0.038891110569999998" blue="0.34811669589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="T3T-Ra-lZh" customClass="TableViewCell" customModule="TemplateApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T3T-Ra-lZh" id="upv-Pa-Jng">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ali Baba ve Kırk Haramiler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-PT-1uK">
+                                                    <rect key="frame" x="5" y="5" width="404" height="90"/>
+                                                    <color key="backgroundColor" red="0.42995715140000001" green="0.072421960529999996" blue="0.75102168319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="wbH-nq-BIg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                                    <color key="textColor" red="0.94836229090000002" green="0.94950705769999999" blue="0.96902400259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="d0g-PT-1uK" secondAttribute="bottom" constant="5" id="VLY-um-1rf"/>
+                                                <constraint firstItem="d0g-PT-1uK" firstAttribute="top" secondItem="upv-Pa-Jng" secondAttribute="top" constant="5" id="llz-Wa-PgX"/>
+                                                <constraint firstAttribute="trailing" secondItem="d0g-PT-1uK" secondAttribute="trailing" constant="5" id="voJ-jx-Tag"/>
+                                                <constraint firstItem="d0g-PT-1uK" firstAttribute="leading" secondItem="upv-Pa-Jng" secondAttribute="leading" constant="5" id="xOt-ff-Jei"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblTitle" destination="d0g-PT-1uK" id="sfw-Y9-rei"/>
+                                            <segue destination="BZ7-a3-sTH" kind="show" identifier="toDetail" trigger="accessoryAction" id="HPp-BR-Kzp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="aEu-wJ-VFC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iEB-UP-e2r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lyc-ww-BHv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="10G-2i-4HA"/>
+                            <constraint firstItem="Lyc-ww-BHv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DbR-YB-JZP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lyc-ww-BHv" secondAttribute="trailing" id="MXQ-Et-5hj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lyc-ww-BHv" secondAttribute="bottom" id="k3z-36-ktQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="İngilizce Türkçe Fıkralar" id="DAn-nQ-Wdr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Wlb-3D-KEu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Lyc-ww-BHv" id="BxN-i1-TLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3473.913043478261" y="127.90178571428571"/>
+        </scene>
+        <!--Sosyal Medya Hesapları-->
+        <scene sceneID="YE0-yq-dn2">
+            <objects>
+                <viewController id="x2D-sf-kk8" customClass="ContactViewController" customModule="TemplateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JaU-ac-gmx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZP-xb-cYO">
+                                <rect key="frame" x="20" y="423" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.42995715140000001" green="0.072421960529999996" blue="0.75102168319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ttD-EH-AHE"/>
+                                </constraints>
+                                <state key="normal" title="instagram">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn:" destination="x2D-sf-kk8" eventType="touchUpInside" id="RpC-9x-akc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çeviriyle Öğren" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qop-2U-jU4">
+                                <rect key="frame" x="20" y="389" width="374" height="24"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95110672709999999" green="0.62318342920000003" blue="0.019513746719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X4c-lj-Bby" firstAttribute="trailing" secondItem="qop-2U-jU4" secondAttribute="trailing" constant="20" id="AT0-5n-jWS"/>
+                            <constraint firstItem="VZP-xb-cYO" firstAttribute="leading" secondItem="X4c-lj-Bby" secondAttribute="leading" constant="20" id="FIh-ib-9Xy"/>
+                            <constraint firstItem="VZP-xb-cYO" firstAttribute="centerX" secondItem="JaU-ac-gmx" secondAttribute="centerX" id="G4z-CF-4tR"/>
+                            <constraint firstItem="VZP-xb-cYO" firstAttribute="top" secondItem="qop-2U-jU4" secondAttribute="bottom" constant="10" id="IPM-xF-yBv"/>
+                            <constraint firstItem="VZP-xb-cYO" firstAttribute="centerY" secondItem="JaU-ac-gmx" secondAttribute="centerY" id="Piw-Af-lhr"/>
+                            <constraint firstItem="qop-2U-jU4" firstAttribute="leading" secondItem="X4c-lj-Bby" secondAttribute="leading" constant="20" id="UVj-v8-I68"/>
+                            <constraint firstItem="X4c-lj-Bby" firstAttribute="trailing" secondItem="VZP-xb-cYO" secondAttribute="trailing" constant="20" id="thf-VO-3bC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X4c-lj-Bby"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sosyal Medya Hesapları" id="9ea-kM-aLe"/>
+                    <connections>
+                        <outlet property="btn" destination="VZP-xb-cYO" id="yG0-ph-T5H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tm1-9T-gDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2113.0434782608695" y="814.95535714285711"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="3Bd-ks-sOd">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="BZ7-a3-sTH" customClass="DetailViewController" customModule="TemplateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zp4-ap-a3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-kH-kux">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.94836229090000002" green="0.94950705769999999" blue="0.96902400259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="135" id="Lxj-q5-0As" customClass="DetailTableViewCell" customModule="TemplateApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lxj-q5-0As" id="ORX-FQ-0Qy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbR-vJ-yMP">
+                                                    <rect key="frame" x="5" y="5" width="404" height="125"/>
+                                                    <color key="tintColor" red="0.94836229090000002" green="0.94950705769999999" blue="0.96902400259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="zbR-vJ-yMP" secondAttribute="bottom" constant="5" id="K3H-jt-Cfi"/>
+                                                <constraint firstItem="zbR-vJ-yMP" firstAttribute="leading" secondItem="ORX-FQ-0Qy" secondAttribute="leading" constant="5" id="KHj-S0-NQ9"/>
+                                                <constraint firstAttribute="trailing" secondItem="zbR-vJ-yMP" secondAttribute="trailing" constant="5" id="R1I-yA-yIQ"/>
+                                                <constraint firstItem="zbR-vJ-yMP" firstAttribute="top" secondItem="ORX-FQ-0Qy" secondAttribute="top" constant="5" id="ixu-88-Gx1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94836229090000002" green="0.94950705769999999" blue="0.96902400259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="title" destination="zbR-vJ-yMP" id="gBH-QT-CDc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BZ7-a3-sTH" id="MXH-lP-Et7"/>
+                                    <outlet property="delegate" destination="BZ7-a3-sTH" id="uzp-Bi-fbR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CAO-VR-NRI" firstAttribute="trailing" secondItem="S8o-kH-kux" secondAttribute="trailing" id="46n-q4-mzG"/>
+                            <constraint firstItem="S8o-kH-kux" firstAttribute="leading" secondItem="CAO-VR-NRI" secondAttribute="leading" id="EEO-0U-XmQ"/>
+                            <constraint firstItem="S8o-kH-kux" firstAttribute="top" secondItem="CAO-VR-NRI" secondAttribute="top" id="H6m-8X-J6Q"/>
+                            <constraint firstItem="CAO-VR-NRI" firstAttribute="bottom" secondItem="S8o-kH-kux" secondAttribute="bottom" id="Loa-F7-wPN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CAO-VR-NRI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jGQ-Bf-SBa">
+                        <barButtonItem key="rightBarButtonItem" image="star" catalog="system" id="xfd-8I-gku">
+                            <connections>
+                                <action selector="star:" destination="BZ7-a3-sTH" id="aMO-rE-fko"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="star" destination="xfd-8I-gku" id="Khb-AC-gpE"/>
+                        <outlet property="tableView" destination="S8o-kH-kux" id="erA-e2-z46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mU6-1d-yq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2918.840579710145" y="814.95535714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oaB-4T-Y06">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rXC-dH-4JX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hid-XP-HhF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.95110672709999999" green="0.62318342920000003" blue="0.019513746719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.95110672709999999" green="0.62318342920000003" blue="0.019513746719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bZq-r7-eva" kind="relationship" relationship="viewControllers" id="MET-ju-HrP"/>
+                        <segue destination="hJa-Dk-1id" kind="relationship" relationship="viewControllers" id="e1K-ft-oxO"/>
+                        <segue destination="VmU-ud-kmL" kind="relationship" relationship="viewControllers" id="pgV-bc-BS1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l61-de-zUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008.6956521739132" y="127.90178571428571"/>
+        </scene>
+        <!--Favoriler-->
+        <scene sceneID="9kh-LA-l6g">
+            <objects>
+                <viewController id="Vp4-82-Qza" customClass="FavoriteViewController" customModule="TemplateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QFf-7x-VHx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kIP-xc-JUj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="V4x-oq-g4r" customClass="FavoriteTableViewCell" customModule="TemplateApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V4x-oq-g4r" id="a1H-Mn-cZQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Ali Baba ve Kırk Haramiler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jQ-dT-Mrw">
+                                                    <rect key="frame" x="5" y="5" width="404" height="110"/>
+                                                    <color key="backgroundColor" red="0.42995715140000001" green="0.072421960529999996" blue="0.75102168319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Tu0-tr-Fwg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                                    <color key="textColor" red="0.94836229090000002" green="0.94950705769999999" blue="0.96902400259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1jQ-dT-Mrw" firstAttribute="top" secondItem="a1H-Mn-cZQ" secondAttribute="top" constant="5" id="8qj-9R-Xfm"/>
+                                                <constraint firstItem="1jQ-dT-Mrw" firstAttribute="leading" secondItem="a1H-Mn-cZQ" secondAttribute="leading" constant="5" id="HG4-rT-lzK"/>
+                                                <constraint firstAttribute="bottom" secondItem="1jQ-dT-Mrw" secondAttribute="bottom" constant="5" id="ZtT-IV-3Lm"/>
+                                                <constraint firstAttribute="trailing" secondItem="1jQ-dT-Mrw" secondAttribute="trailing" constant="5" id="rpX-Dq-td5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblTitle" destination="1jQ-dT-Mrw" id="rXO-nC-Wdj"/>
+                                            <segue destination="BZ7-a3-sTH" kind="show" identifier="toFavoriteDetail" trigger="accessoryAction" id="AkM-cL-Yp0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vp4-82-Qza" id="eAo-Gd-6hZ"/>
+                                    <outlet property="delegate" destination="Vp4-82-Qza" id="Omg-PR-us9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aFc-Ae-D41" firstAttribute="bottom" secondItem="kIP-xc-JUj" secondAttribute="bottom" id="0ks-Sr-1pu"/>
+                            <constraint firstItem="kIP-xc-JUj" firstAttribute="top" secondItem="aFc-Ae-D41" secondAttribute="top" id="b7I-JG-hQK"/>
+                            <constraint firstItem="kIP-xc-JUj" firstAttribute="leading" secondItem="aFc-Ae-D41" secondAttribute="leading" id="gBL-69-beX"/>
+                            <constraint firstItem="aFc-Ae-D41" firstAttribute="trailing" secondItem="kIP-xc-JUj" secondAttribute="trailing" id="yfK-Jg-enO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aFc-Ae-D41"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favoriler" id="rEj-p5-9AX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BfH-zV-dZM"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="kIP-xc-JUj" id="ttB-kE-fHu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xI-qq-G7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242.0289855072465" y="127.90178571428571"/>
+        </scene>
+        <!--Fıkralar-->
+        <scene sceneID="e8d-Ay-5Y3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bZq-r7-eva" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fıkralar" image="house.fill" catalog="system" id="tea-qY-naP">
+                        <color key="badgeColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jjo-qT-aNk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95110672709999999" green="0.62318342920000003" blue="0.019513746719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                            <color key="textColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yn3-SU-4Dz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ra-Fi-5BU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2742.0289855072465" y="127.90178571428571"/>
+        </scene>
+        <!--Favoriler-->
+        <scene sceneID="ioc-0j-cKI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hJa-Dk-1id" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoriler" image="star.lefthalf.fill" catalog="system" id="wIh-dc-C0n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hzx-8I-MLm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95110672709999999" green="0.62318342920000003" blue="0.019513746719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                            <color key="textColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vp4-82-Qza" kind="relationship" relationship="rootViewController" id="2yC-86-P2z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6DT-x3-nCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.8840579710145" y="127.90178571428571"/>
+        </scene>
+        <!--Bize Yazın-->
+        <scene sceneID="A49-en-vqm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VmU-ud-kmL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bize Yazın" image="person.fill" catalog="system" id="bZH-qt-jhw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZGU-Kg-234">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95110672709999999" green="0.62318342920000003" blue="0.019513746719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                            <color key="textColor" red="0.1604796946" green="0.15873670579999999" blue="0.48830509189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x2D-sf-kk8" kind="relationship" relationship="rootViewController" id="IDK-TE-4br"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd1-mr-JRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202.8985507246377" y="814.95535714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="star.lefthalf.fill" catalog="system" width="64" height="58"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AkM-cL-Yp0"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "The Sign / İşaret",
+        "subTitle": "The Sisters",
+        "details": [
+          {"en": "Teacher: Why are you late, son?", "tr": "Öğretmen: Niye geç kaldın, oğlum?"},
+          {"en": "Student: Because of the sign on the road.", "tr": "Öğrenci: Yoldaki işaret yüzünden."},
+          {"en": "Teacher: What type of a sign.", "tr": "Öğretmen: Nasıl bir işaret?"},
+          {"en": "Student: The sign that says, “School Ahead, Go Slow!”.", "tr": "Öğrenci: “Okul var, yavaşla!” diyen işaret."}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The Elephant / Fil",
+        "subTitle": "The Sisters",
+        "details": [
+          {"en": "A : Why are you crying?", "tr": "A : Niye ağlıyorsun?"},
+          {"en": "B : The elephant is dead.", "tr": "A : Fil öldü."},
+          {"en": "A : Was he your pet?", "tr": "A : Senin hayvanın mıydı?"},
+          {"en": "B : No, but I’m the one who must dig his grave.", "tr": "B : Hayır, ama mezarını ben kazmak zorundayım."}
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Baklava – Nasreddin Hodja",
+        "subTitle": "The Sisters",
+        "details": [
+          {"en": "A: Hello Sir!", "tr": "A: Merhaba efendim!"},
+          {"en": "B: Hello young man", "tr": "B: Merhaba genç adam"},
+          {"en": "A: Have you just seen the man carrying a tray full of baklava?", "tr": "A: Baklava dolu bir tepsi taşıyan adamı gördün mü?"},
+          {"en": "B: That’s none of my business son", "tr": "B: bana ne!"},
+          {"en": "A: But sir, he was going to your house!", "tr": "A: Ama efendim, adam senin evine gidiyordu!"},
+          {"en": "B: In that case, It’s none of your business young man!", "tr": "B: O zaman , sana ne!"}
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Eşek evde yok – Nasreddin Hodja",
+        "subTitle": "The Sisters",
+        "details": [
+          {"en": "- One day Nasreddin Hodja's neighbour knocked at his door", "tr": "- Bir gün Nasreddin Hoca’nın komşusun kapısını çaldı"},
+          {"en": "A: Oh! Hello my friend welcome…", "tr": "A: Oh! Merhaba arkadaşım hoşgeldiniz …"},
+          {"en": "B: Hello Hodja, I have some task on my farm today. May I borrow your donkey? But Nasreddin Hodja was not eager to give the donkey", "tr": "B: Merhaba Hoca, bugün çiftliğimde bazı işlerim var. Eşeğini ödünç alabilir miyim? Ancak Nasreddin Hoca eşeği vermeye hevesli değildi."},
+          {"en": "A: Well, I wish I could give it to you, but it is not at home now But just then Just after hearing the donkey’s voice Hodja's neighbour said:", "tr": "A: Keşke sana verebilseydim, ama şu an evde değil. Ama tam o sırada eşek anırdı, eşeğin sesini duyan komşusu Hoca ya seslendi:"},
+          {"en": "B: It is unacceptable! you are saying the donkey is not at home but I could hear its voice", "tr": "B: Hocam yalan söylüyorsun , eşeğin evde olmadığını söylüyorsun ama sesini duyabiliyorum."},
+          {"en": "A: Hodja got angry Come on man!… Whom do you believe? Do you belive me or do you believe donkey?", "tr": "A: Hoca sinirlendi; Haydi dostum! … Kime kime inanıyorsun? Bana mı inanıyorsun yok sa eşeğe mi inanıyorsun ?"},
+          {"en": "", "tr": ""}
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Acemi Bülbül – Nasreddin Hodja",
+        "subTitle": "The Sisters",
+        "details": [
+          {"en": "One day Hodja climbs one of the charity trees by the roadside and starts eating some figs. A traveler who is going by calls:", "tr": "Hoca bir gün, yol kenarındaki hayrat ağaçlardan birine çıkmış, incir yemeğe başlamış. Yanından geçen bir yolcu seslenmiş:"},
+          {"en": "-Halloo! Who are you? What are you doing there?", "tr": "– “Hey ! Sen kimsin ? Ne yapıyorsun orada ?”"},
+          {"en": "-“I’m a nightingale” says Hodja.", "tr": "– “Ben bülbülüm” demiş Hoca."},
+          {"en": "The man:", "tr": "Adam :"},
+          {"en": "-“What a peculiar voice! Does a nightingale sing like this?”", "tr": "– Bu ne biçim bülbül sesi? Bülbül hiç böyle mi öter?"},
+          {"en": "-“What can I do? An inexperienced nightingale sings like this!”", "tr": "– Ne yapalım? Acemi bülbül bu kadar öter!"}
+        ]
+    },
+    {
+        "id": 6,
+        "title": "The Sisters / Kız Kardeşler",
+        "subTitle": "Kız Kardeşler",
+        "details": [
+          {"en": "The little sisters went into the room to play at ball.", "tr": "Küçük kız kardeşler top oynamak için odaya girdiler."},
+          {"en": "“We must be careful not to wake the white cat,” the tall one said, softly.", "tr": "“Beyaz kediyi uyandırmamaya dikkat etmeliyiz,” dedi uzun boylu olan usulca."},
+          {"en": "“Or to spoil the roses,” the fat one whispered;", "tr": "“Ya da gülleri mahvetmemeye” diye fısıldadı şişman olan;"},
+          {"en": "“But throw high, dear sister, or we shall never hit the ceiling.”", "tr": "“Ama yükseğe fırlat, sevgili kız kardeşim, yoksa asla tavana vuramayacağız.”"},
+          {"en": "“You dear children,” thought the white cat,", "tr": "“Siz sevgili çocuklar” diye düşündü beyaz kedi,"},
+          {"en": "“Why do you come to play here at all? Only just round the corner are the shady trees, and the birds singing on the branches, and the sunshine is flecking the pathway. Who knows but what, out there, your ball might touch the sky? Here you will only disturb me, and perhaps spoil the roses; and at best you can but hit the ceiling!”", "tr": "“Neden buraya oynamaya gelirsiniz? Gölgeli ağaçlar, dallarda şarkı söyleyen kuşlar sadece köşeyi dönünce ve güneş ışığı patikayı bürüyor. Kim bilir ama, dışarıda, topunuz gökyüzüne dokunabilir mi? Burada sadece beni rahatsız edeceksiniz ve belki de gülleri mahvedeceksiniz ve yapabileceğinizin en iyisi tavana vurmak!”"}
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Little Red Riding Hood / Kırmızı Başlıklı Kız",
+        "subTitle": "Kırmızı Başlıklı Kız",
+        "details": [
+          {"en": "Little Red Riding Hood lived in a wood with her mother. One day Little Red Riding Hood went to visit her granny. She had a nice cake in her basket. On her way Little Red Riding Hood met a wolf.", "tr": "Küçük Kırmızı Başlıklı Kız annesiyle birlikte bir ormanda yaşardı. Bir gün Küçük Kırmızı Başlıklı Kız büyükannesini ziyarete gitti. Sepetinde güzel bir kek vardı. Yolda Küçük Kırmızı Başlıklı Kız bir kurtla karşılaştı."},
+          {"en": "“Hello!” said the wolf. “Where are you going?”", "tr": "“Merhaba!” dedi kurt. “Nereye gidiyorsun?”"},
+          {"en": "“I’m going to see my grandmother. She lives in a house behind those trees.”", "tr": "“Büyükannemi göreceğim. O ağaçların arkasındaki bir evde yaşıyor.”"},
+          {"en": "The wolf ran to Granny’s house and ate Granny up. He got into Granny’s bed. A little later, Little Red Riding Hood reached the house. She looked at the wolf.", "tr": "Kurt, büyükannenin evine koştu ve büyükanneyi yedi. Büyükannenin yatağına girdi. Biraz sonra, Küçük Kırmızı Başlıklı Kız eve ulaştı. Kurda baktı."},
+          {"en": "“Granny, what big eyes you have!”", "tr": "“Büyükanne, ne büyük gözlerin var!”"},
+          {"en": "“All the better to see you with!” said the wolf.", "tr": "“Seni daha iyi görmek için!” dedi kurt."},
+          {"en": "“Granny, what big ears you have!”", "tr": "“Büyükanne, ne büyük kulakların var!”"},
+          {"en": "“All the better to hear you with!” said the wolf.", "tr": "“Seni daha iyi duymak için!” dedi kurt."},
+          {"en": "“Granny, what a big nose you have!”", "tr": "“Büyükanne, ne kadar büyük bir burnun var!”"},
+          {"en": "“All the better to smell you with!” said the wolf.", "tr": "“Seni daha iyi koklamak için!” dedi kurt."},
+          {"en": "“Granny, what big teeth you have!”", "tr": "“Büyükanne, ne kadar büyük dişlerin var!”"},
+          {"en": "“All the better to eat you with!” shouted the wolf. A woodcutter was in the wood. He heard a loud scream and ran to the house. The woodcutter hit the wolf over the head. The wolf opened his mouth wide and shouted and Granny jumped out. The wolf ran away and Little Red Riding Hood never saw the wolf again.", "tr": "“Seni daha iyi yemek için!” diye bağırdı kurt. Ormanda bir oduncu vardı. Yüksek sesle bir çığlık duydu ve eve koştu. Oduncu kurdu başının üzerinden vurdu. Kurt ağzını geniş açtı ve bağırdı ve Büyükanne dışarı fırladı. Kurt kaçtı ve Küçük Kırmızı Başlıklı Kız, bir daha kurdu görmedi."}
+        ]
+    },
+    {
+        "id": 6,
+        "title": "",
+        "subTitle": "The Sisters",
+        "details": [
+          {"en": "", "tr": ""},
+          {"en": "", "tr": ""},
+          {"en": "", "tr": ""},
+          {"en": "", "tr": ""},
+          {"en": "", "tr": ""},
+          {"en": "", "tr": ""},
+          {"en": "", "tr": ""}
+        ]
+    }
+
+
+]
