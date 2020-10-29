@@ -12,13 +12,13 @@ struct Model: Codable{
     let id: Int
     let title: String
     let subTitle: String
-    var details: [Language]
+    var details: [Language1]
     
     init() {
         self.id = 0
         self.title = String()
         self.subTitle = String()
-        self.details = [Language]()
+        self.details = [Language1]()
     }
     
     enum CodingKeys: String, CodingKey{
@@ -29,7 +29,7 @@ struct Model: Codable{
     }
 }
 
-struct Language: Codable {
+struct Language1: Codable {
     let en: String
     let tr: String
     var status: Bool?
